@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const cartSchema = new Schema({
   cartItems: {
-    type : Object 
+    type : any 
   } 
 });
 
