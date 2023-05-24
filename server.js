@@ -9,6 +9,8 @@ app.post("/postdata", async (req, res) => {
     const info = new Data({
         cartItems : req.body
     }).save()
+    
+    console.log(req.body);
 
     res.send({
         message : "success"
