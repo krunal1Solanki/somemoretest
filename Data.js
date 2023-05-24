@@ -3,8 +3,8 @@ const Schema = mongoose.Schema;
 
 const cartSchema = new Schema({
   cartItems: {
-    type : any 
-  } 
+    type: Schema.Types.Mixed
+  }
 });
 
-module.exports = mongoose.model('Items', cartSchema);
+module.exports = mongoose.model('Cart', cartSchema);

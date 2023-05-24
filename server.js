@@ -7,7 +7,7 @@ require("dotenv").config();
 app.post("/postdata", async (req, res) => {
 
     const info = new Data({
-        cartItems : req.body
+        cartItems : req.body.results[0]
     }).save()
     
     console.log(req.body);
